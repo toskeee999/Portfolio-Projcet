@@ -1,0 +1,90 @@
+.forms {
+    background-color: #0d253f;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40%;
+    font-size: 1.2rem;
+  }
+  .forms input {
+    background-color: #121212;
+    border: 1px solid #fff4e5e6;
+    color: #fff4e5e6;
+    font-size: 1em;
+    padding: 10px 5px;
+  }
+  .forms-item {
+    margin: 40px 0 10px 0;
+    width: 60%;
+  }
+  .forms-item p {
+    display: flex;
+    flex-direction: column;
+  }
+  .forms h2 {
+    font-size: 1.8em;
+    margin-bottom: 0;
+  }
+  .incorect {
+    color: #bb0000;
+  }
+  .forms button {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: #fff4e5e6 solid 2px;
+    border-radius: 5px;
+    margin: 5px 5px 40px 5px;
+    color: #fff4e5e6;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.2s ease;
+  }
+  .forms button:hover {
+    background-color: #fff4e5e6;
+    color: #0d253f;
+  }
+  @media screen and (max-width: 2200px) {
+    .forms {
+      width: 30%;
+      left: 35%;
+    }
+  }
+  @media screen and (max-width: 1800px) {
+    .forms {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .forms {
+      width: 40%;
+      left: 30%;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .forms {
+      width: 50%;
+      left: 25%;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .forms {
+      width: 60%;
+      left: 20%;
+    }
+    .forms-item {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .forms {
+      width: 80%;
+      left: 10%;
+      font-size: 0.8rem;
+    }
+  }
+  

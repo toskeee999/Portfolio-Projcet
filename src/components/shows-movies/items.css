@@ -1,0 +1,68 @@
+.items-list {
+    margin: 100px auto 0 auto;
+    width: 95vw;
+    font-size: 1.2rem;
+  }
+  .items-list-ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+  }
+  .items-list select {
+    padding: 10px;
+    border: solid 1px #fff4e5e6;
+    background-color: transparent;
+    color: #fff4e5e6;
+    font-size: 1.2em;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .items-list option {
+    background-color: #0d253f;
+  }
+  .no-items-message {
+    font-size: 2em;
+  }
+  @media screen and (max-width: 1700px) {
+    .items-list {
+      margin: 80px auto 0 auto;
+      font-size: 1rem;
+    }
+    .items-list select {
+      padding: 8px;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .items-list {
+      margin: 70px auto 0 auto;
+    }
+    .items-list select {
+      padding: 7px;
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    .items-list {
+      font-size: 0.8rem;
+    }
+    .items-list select {
+      padding: 6px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .items-list {
+      margin: 60px auto 0 auto;
+      width: 92vw;
+      font-size: 0.6rem;
+    }
+    .items-list select {
+      padding: 5px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .items-list {
+      width: 89vw;
+    }
+  }
+  

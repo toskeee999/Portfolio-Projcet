@@ -1,0 +1,396 @@
+#details {
+    width: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 100px auto;
+    font-size: 1.2rem;
+    color: #fff4e5e6;
+  }
+  .black-shadow {
+    background-color: hsl(0, 0%, 0%, 85%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #top {
+    display: flex;
+    gap: 40px;
+    margin: 40px;
+  }
+  .image-top {
+    flex-basis: 20%;
+  }
+  .text-top {
+    flex-basis: 60%;
+  }
+  .text-top h2 {
+    margin: 0;
+    font-size: 2em;
+  }
+  .text-top p {
+    margin: 0 0 1% 0;
+    font-size: 1em;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .text-top ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 1% 0;
+    font-size: 1em;
+  }
+  .text-top ul li:last-child {
+    border-right: none;
+  }
+  .text-top li {
+    border-right: solid 1px #fff4e5e6;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .space {
+    margin-right: 5px;
+  }
+  #cast-div {
+    position: relative;
+    width: 60vw;
+    padding: 40px;
+  }
+  #bottom-cast {
+    overflow: hidden;
+    width: 100%;
+  }
+  #bottom-cast p span.bold {
+    font-size: 1em;
+  }
+  #bottom-cast ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    transition: transform ease-in-out 1s;
+  }
+  #bottom-cast li {
+    width: 5.5vw;
+  }
+  .arrow-cast-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 997;
+  }
+  .arrow-cast-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 997;
+  }
+  #coments-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px 40px 40px;
+  }
+  .coment {
+    flex-basis: 45%;
+    box-sizing: border-box;
+  }
+  .coment h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  .coment textarea {
+    width: 98%;
+    height: 150px;
+    font-size: 1em;
+    border-radius: 5px 10px;
+    background-color: #0d253f;
+    color: #fff4e5e6;
+    border: none;
+    resize: none;
+    align-self: left;
+    padding: 1%;
+  }
+  .coment textarea:focus {
+    border: solid 2px #fff4e5e6;
+  }
+  .coment button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid 1px #fff4e5e6;
+    border-radius: 5px 10px;
+    color: #fff4e5e6;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  .coment button:hover {
+    background-color: #0d253f;
+  }
+  .coment p {
+    text-align: right;
+    margin: 0;
+  }
+  .written-coments {
+    flex-basis: 45%;
+    font-size: 1em;
+    max-height: 700px;
+    max-width: 45%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+  }
+  .written-coments ul {
+    padding: 0;
+    list-style: none;
+    padding: 0 20px;
+  }
+  .written-coments li {
+    border: solid 1px #fff4e5e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+  .written-coments i {
+    border: solid 1px #fff4e5e6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+  }
+  .written-text {
+    white-space: pre-wrap;
+  }
+  .written-user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .written-user h4 {
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 0;
+  }
+  .hearth-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff4e5e6;
+  }
+  .hearth-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .below-title-space {
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: solid 1px #fff4e5e6;
+  }
+  .hearth-div-mobile {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  }
+  .saved i {
+    color: #ff0000;
+  }
+  @media screen and (max-width: 2200px) {
+    #details {
+      width: 80%;
+      font-size: 1.1rem;
+    }
+  }
+  @media screen and (max-width: 1900px) {
+    #details {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 1750px) {
+    #cast-div {
+      width: 70vw;
+    }
+    #bottom-cast li {
+      width: 6.6vw;
+    }
+    .image-top {
+      flex-basis: 25%;
+    }
+    .text-top {
+      flex-basis: 65%;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    #cast-div {
+      width: 75vw;
+    }
+    #bottom-cast li {
+      width: 7vw;
+    }
+    #details {
+      width: 85%;
+    }
+    .image-top {
+      flex-basis: 25%;
+    }
+    .text-top {
+      flex-basis: 70%;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    #cast-div {
+      width: 85vw;
+    }
+    #bottom-cast li {
+      width: 8vw;
+    }
+    #details {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .black-shadow {
+      padding-top: 60px;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    #cast-div {
+      width: 90vw;
+    }
+    #bottom-cast li {
+      width: 8.5vw;
+    }
+    .image-top {
+      flex-basis: 30%;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .image-top {
+      flex-basis: 35%;
+    }
+    .text-top {
+      flex-basis: 65%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    #cast-div {
+      width: 80vw;
+      padding: 30px;
+    }
+    #details {
+      min-height: 100vh;
+    }
+    #top {
+      margin: 20px 30px 10px;
+      gap: 20px;
+    }
+    .image-top {
+      flex-basis: 25%;
+    }
+    .text-top {
+      flex-basis: 75%;
+    }
+    .overview {
+      margin: 0 30px 30px 30px;
+    }
+    .overview p {
+      margin: 0;
+    }
+    #coments-div {
+      margin: 0 30px 30px 30px;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    #cast-div {
+      width: 90vw;
+    }
+    #bottom-cast li {
+      width: 10vw;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    #details {
+      font-size: 0.9rem;
+    }
+    .text-top h2 {
+      font-size: 1.5em;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #details {
+      font-size: 0.8rem;
+    }
+    #top {
+      margin: 15px 20px 10px;
+    }
+    .overview {
+      margin: 0 20px 20px 20px;
+    }
+    .image-top {
+      flex-basis: 30%;
+    }
+    .text-top {
+      flex-basis: 70%;
+    }
+    #coments-div {
+      display: block;
+      margin: 0 20px 20px 20px;
+    }
+    .coment {
+      width: 100%;
+    }
+    .written-coments {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+    #bottom-cast li {
+      width: 13vw;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    #cast-div {
+      width: 85vw;
+    }
+    #bottom-cast li {
+      width: 20vw;
+    }
+    #details {
+      font-size: 0.9rem;
+    }
+    #top {
+      margin: 0;
+      width: 100%;
+      height: 70vh;
+      display: block;
+    }
+    .image-top {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.37) 0px -83px 85px 0px inset,
+        rgba(0, 0, 0, 0.35) 0px -96px 90px 0px inset,
+        rgba(0, 0, 0, 0.3) 0px -159px 120px 0px inset,
+        rgba(0, 0, 0, 0.26) 0px 62px 61px, rgba(0, 0, 0, 0.29) 0px 64px 62px,
+        rgba(0, 0, 0, 0.29) 0px 68px 64px, rgba(0, 0, 0, 0.29) 0px 76px 68px,
+        rgba(0, 0, 0, 0.29) 0px 92px 76px;
+    }
+    .image-top h2 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .image-top p {
+      margin: 5px 0 0 0;
+    }
+    .black-shadow {
+      padding-top: 40px;
+    }
+  }
+  

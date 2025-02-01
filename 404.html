@@ -4,14 +4,11 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      const segment = 1;
-      const locationSegments = window.location.pathname.split("/");
-      const repoName = locationSegments[segment];
-      const newPath = locationSegments.slice(segment + 1).join("/");
-      window.location.href = `/${repoName}/${newPath}`;
+      const fullPath = window.location.pathname;
+      window.location.href = `/Portfolio-Projcet${fullPath}`;
     </script>
     <noscript>
-      <meta http-equiv="refresh" content="0;url=/" />
+      <meta http-equiv="refresh" content="0;url=/Portfolio-Projcet/" />
     </noscript>
   </head>
   <body>
